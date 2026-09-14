@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3 md:col-span-2">
             <div className="flex items-center gap-2">
-              <Brandmark size="sm" />`n              <span className="font-display font-bold text-xl text-ink">SecondRun</span>
+              <span className="font-display font-bold text-xl text-ink">SecondRun</span>
               <span className="text-xs font-mono uppercase bg-ink text-white px-2 py-0.5">Vol 1.0</span>
             </div>
             <p className="text-sm text-ink-600 max-w-sm leading-relaxed">
