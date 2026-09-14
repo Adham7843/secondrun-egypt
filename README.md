@@ -63,9 +63,9 @@ Open [http://localhost:3200](http://localhost:3200) to view the application.
 │   └── generate_1200_graveyard_pipeline.py # High-speed pipeline generator
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx               # Homepage with flagship autopsies & $49 paywall
+│   │   ├── page.tsx               # Homepage with flagship autopsies & 999 EGP paywall
 │   │   ├── dashboard/page.tsx     # Member dashboard with search across all 1,200
-│   │   ├── pricing/page.tsx       # $49 Lifetime Pass checkout page
+│   │   ├── pricing/page.tsx       # 999 EGP Lifetime Pass checkout page
 │   │   └── company/[slug]/page.tsx# Individual forensic autopsy dossier
 │   ├── components/
 │   │   ├── auth-gate.tsx          # Subscriber access protection & demo bypass

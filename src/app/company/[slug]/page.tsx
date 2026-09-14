@@ -104,7 +104,7 @@ export default async function CompanyPage({
             href="/pricing"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-rebuild text-white font-semibold hover:bg-rebuild/90 transition-colors"
           >
-            Unlock the 5 rebuild blueprints ($49) →
+            Unlock the 5 rebuild blueprints (999 EGP) →
           </Link>
         </div>
       </header>
@@ -221,7 +221,7 @@ export default async function CompanyPage({
                 href="/pricing"
                 className="inline-flex items-center gap-1 mt-2 text-sm font-mono font-bold text-rebuild hover:underline"
               >
-                Unlock the full thesis + 5 rebuild blueprints ($49) →
+                Unlock the full thesis + 5 rebuild blueprints (999 EGP) →
               </Link>
             </div>
 
@@ -286,7 +286,7 @@ export default async function CompanyPage({
                   href="/pricing"
                   className="inline-flex items-center gap-1 px-5 py-2.5 rounded bg-rebuild text-white text-sm font-semibold hover:bg-rebuild/90 transition-colors"
                 >
-                  Unlock All 5 Blueprints ($49) →
+                  Unlock All 5 Blueprints (999 EGP) →
                 </Link>
               </div>
             </div>

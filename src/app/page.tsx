@@ -290,7 +290,7 @@ export default async function Home() {
           <div className="shrink-0 p-6 bg-[#1D1D20] border border-ink-800 rounded-sm text-center sm:text-right space-y-3">
             <span className="font-mono text-xs text-ink-400 uppercase block">Lifetime Access</span>
             <div className="flex items-baseline justify-center sm:justify-end gap-1.5">
-              <span className="font-display text-4xl sm:text-5xl font-bold text-white">$49</span>
+              <span className="font-display text-4xl sm:text-5xl font-bold text-white">999 EGP</span>
               <span className="text-xs font-mono text-ink-400">one-time</span>
             </div>
             <p className="text-[11px] font-mono text-ink-400">Zero recurring fees · Instant activation</p>
@@ -299,7 +299,7 @@ export default async function Home() {
                 variant="primary"
                 className="w-full h-11 px-6 text-sm font-semibold shadow-md bg-rebuild hover:bg-rebuild/90 text-white"
               >
-                Unlock All-Access ($49) →
+                Unlock All-Access (999 EGP) →
               </Button>
             </Link>
           </div>
@@ -339,7 +339,7 @@ export default async function Home() {
         <div className="flex items-center justify-between text-xs font-mono text-ink-400 pt-2 flex-wrap gap-2">
           <span>✔ Instant delivery after checkout · New rebuild featured daily</span>
           <Link href="/pricing" className="text-rebuild hover:underline font-semibold">
-            Get the Pass ($49) →
+            Get the Pass (999 EGP) →
           </Link>
         </div>
       </section>
@@ -372,7 +372,7 @@ export default async function Home() {
               variant="primary"
               className="w-full sm:w-auto h-11 px-6 text-sm font-semibold shadow-2xs bg-rebuild hover:bg-rebuild/90 text-white"
             >
-              Unlock All 1,200+ Dossiers ($49) →
+              Unlock All 1,200+ Dossiers (999 EGP) →
             </Button>
           </Link>
         </div>

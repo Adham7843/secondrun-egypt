@@ -6,7 +6,7 @@ You own this business end-to-end: code, data, money rail, deploys.
 
 ## What this business is
 
-Post-mortem intelligence vault on 1,200 dead startups ($49 lifetime, Whop-only,
+Post-mortem intelligence vault on 1,200 dead startups (999 EGP lifetime, Whop-only,
 no refunds). The DATA is the product. Stack: Next.js 14 + Tailwind/Radix,
 Prisma + SQLite today → Drizzle + Cloudflare D1 tomorrow. Full architecture and
 launch sequence: `plan/WHOP_LAUNCH_PLAN.md` — READ IT FIRST on every session.
@@ -43,5 +43,5 @@ launch sequence: `plan/WHOP_LAUNCH_PLAN.md` — READ IT FIRST on every session.
 
 - Log every session to `memory/MEMORY.md` (append, newest on top): date, what changed,
   commits pushed, what's next, anything Sovereign must provide (e.g. Whop secrets).
-- Pending Sovereign inputs: Whop $49 product ID + webhook secret (needed for gate build).
+- Pending Sovereign inputs: Whop 999 EGP product ID + webhook secret (needed for gate build).
 - After every forge/change: update memory BEFORE declaring done.

@@ -25,7 +25,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-ink-700">
               <li><Link href="/" className="hover:text-rebuild">Browse Graveyard</Link></li>
               <li><Link href="/browse" className="hover:text-rebuild">Browse by Batch</Link></li>
-              <li><Link href="/pricing" className="hover:text-rebuild font-semibold text-rebuild">Lifetime Pass ($49)</Link></li>
+              <li><Link href="/pricing" className="hover:text-rebuild font-semibold text-rebuild">Lifetime Pass (999 EGP)</Link></li>
             </ul>
           </div>
 

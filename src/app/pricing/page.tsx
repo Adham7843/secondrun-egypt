@@ -35,7 +35,7 @@ export default function PricingPage() {
 
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-rebuild-light/80 border border-rebuild/30 rounded-full text-xs font-mono text-ink-800 mt-2">
           <span className="w-2 h-2 rounded-full bg-rebuild animate-pulse" />
-          <span>Launch Special: <strong>$49 One-Time Lifetime Access</strong> (No Monthly Recurring Fees)</span>
+          <span>Launch Special: <strong>999 EGP One-Time Lifetime Access</strong> (No Monthly Recurring Fees)</span>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ export default function PricingPage() {
             </p>
             <div className="pt-2 flex items-baseline gap-2">
               <span className="font-display text-4xl sm:text-5xl font-bold text-ink">
-                $49
+                999 EGP
               </span>
               <span className="text-xs font-mono text-ink-500">
                 one-time payment (Lifetime access to all current & future dossiers)
@@ -169,7 +169,7 @@ export default function PricingPage() {
             {/* Gateway lives on its own page: buyer pays there, never leaves it. */}
             <Link href="/checkout" className="block">
               <Button variant="primary" className="w-full h-11 text-xs font-semibold shadow-sm">
-                <span>Continue to Secure Checkout ($49)</span>
+                <span>Continue to Secure Checkout (999 EGP)</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
               </Button>
             </Link>

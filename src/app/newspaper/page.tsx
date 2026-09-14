@@ -21,7 +21,7 @@ export default function NewspaperPage() {
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-[#991B1B] font-bold">PRICE: $49 LIFETIME</span>
+            <span className="text-[#991B1B] font-bold">PRICE: 999 EGP LIFETIME</span>
             <span>NO REFUNDS</span>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function NewspaperPage() {
               RECENT CASUALTIES
             </Link>
             <Link href="/pricing" className="hover:text-[#991B1B] transition-colors text-[#991B1B] font-semibold">
-              SUBSCRIBE ($49 ALL-ACCESS)
+              SUBSCRIBE (999 EGP ALL-ACCESS)
             </Link>
           </div>
           <div className="text-[11px] text-ink-600 hidden md:block">
@@ -209,7 +209,7 @@ export default function NewspaperPage() {
                   </h3>
                 </div>
                 <div className="text-right sm:text-right font-mono text-xs">
-                  <div className="text-[#991B1B] font-bold text-lg leading-tight">$49.00</div>
+                  <div className="text-[#991B1B] font-bold text-lg leading-tight">999 EGP</div>
                   <div className="text-[10px] text-ink-500 uppercase">One-Time All-Access</div>
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function NewspaperPage() {
                             size="sm"
                             className="bg-[#991B1B] hover:bg-red-800 text-white text-[11px] font-mono h-7 px-3 rounded-none font-bold"
                           >
-                            Unlock Module ($49 Pass) →
+                            Unlock Module (999 EGP Pass) →
                           </Button>
                         </Link>
                       </div>
@@ -310,7 +310,7 @@ export default function NewspaperPage() {
                   Resurrect Atrium in Cursor Tonight
                 </h4>
                 <p className="text-xs font-serif text-ink-700 max-w-lg mx-auto">
-                  One single $49 lifetime pass unlocks every prompt, schema, and directive for Atrium plus our entire 
+                  One single 999 EGP lifetime pass unlocks every prompt, schema, and directive for Atrium plus our entire 
                   archive of 1,200+ dead startup teardowns. Instant copy-paste injection.
                 </p>
                 <div className="pt-1">
@@ -319,7 +319,7 @@ export default function NewspaperPage() {
                       size="lg"
                       className="bg-[#991B1B] hover:bg-red-800 text-white font-mono text-xs uppercase tracking-wider px-8 h-11 rounded-none font-bold shadow-xs"
                     >
-                      Unlock All-Access Lifetime Pass ($49)
+                      Unlock All-Access Lifetime Pass (999 EGP)
                     </Button>
                   </Link>
                 </div>
@@ -456,7 +456,7 @@ export default function NewspaperPage() {
 
               <div className="pt-2 border-t border-[#111111] space-y-2 text-center">
                 <div className="font-mono text-xs font-bold text-[#111111]">
-                  ONE PASS · ALL MORTALITIES · $49
+                  ONE PASS · ALL MORTALITIES · 999 EGP
                 </div>
                 <Link href="/pricing" className="block">
                   <Button

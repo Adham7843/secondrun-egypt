@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="border-b border-ink-200/60 bg-ink-100/50 px-4 py-1 text-center text-[10px] sm:text-[11px] font-mono tracking-wider sm:tracking-widest text-ink-600 uppercase flex items-center justify-between max-w-7xl mx-auto">
         <span>Vol. 1 · Morgue File</span>
         <span className="hidden sm:inline">1,200+ Autopsies Filed · 40 YC Batches</span>
-        <span className="text-rebuild font-semibold">Pass: $49</span>
+        <span className="text-rebuild font-semibold">Pass: 999 EGP</span>
       </div>
 
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Link href="/pricing">
             <Button variant="primary" size="sm" className="text-xs font-semibold bg-rebuild hover:bg-rebuild/90 text-white">
-              All-Access Pass ($49)
+              All-Access Pass (999 EGP)
             </Button>
           </Link>
         </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
           <div className="pt-3 border-t border-ink-200 flex flex-col gap-2 font-mono">
             <Link href="/pricing" onClick={() => setMobileOpen(false)}>
               <Button variant="primary" className="w-full text-xs bg-rebuild text-white">
-                All-Access Pass ($49)
+                All-Access Pass (999 EGP)
               </Button>
             </Link>
           </div>

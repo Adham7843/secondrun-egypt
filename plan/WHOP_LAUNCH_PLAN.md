@@ -29,13 +29,13 @@ are Whop checkout (buy) and the member sign-in page on the dashboard domain (re-
 SecondRun sells post-mortem intelligence on 1,200 dead startups: what they built,
 why they died, and the 5-module rebuild blueprints to resurrect each one as a
 lean micro-SaaS. The data layer IS the product. Marketing frontends are disposable;
-the gated dashboard is the vault. Price: **$49 one-time, lifetime access, no refunds.**
+the gated dashboard is the vault. Price: **999 EGP one-time, lifetime access, no refunds.**
 
 ## 2. Topology — many fronts, one vault
 
 ```
 [secondrun.io + niche SEO frontends]  → static, no DB, no prompt bytes
-        │  CTA → Whop checkout ($49 one-time)
+        │  CTA → Whop checkout (999 EGP one-time)
         ▼
 [app.secondrun.io]                    → the ONLY dynamic app (DB + auth + prompts)
   /pricing → Whop checkout embed/link
@@ -56,7 +56,7 @@ Guard: `tests/landing.test.ts` fails the build on any prompt leak into landing d
 
 ## 4. Money + access — Whop (NO Stripe), NO passwords, NO refunds
 
-- **Gateway: Whop only.** $49 one-time product. Memberships carry native `license_key`.
+- **Gateway: Whop only.** 999 EGP one-time product. Memberships carry native `license_key`.
 - **Flow:** pay → `membership.went_valid` webhook → Worker verifies signature (Standard
   Webhooks spec) → D1 `entitlements(email, license_key, membership_id)` → email buyer
   **license key + single-use access link** (15-min expiry) → click sets HttpOnly session
@@ -83,7 +83,7 @@ Guard: `tests/landing.test.ts` fails the build on any prompt leak into landing d
 - [x] 30-story prompt-free landing split (commit `a86bca9`)
 - [x] Company pages stripped to story + paywall (same commit)
 - [x] Untrack `.env`, `dev.db` (commit `9688706`)
-- [ ] Sovereign: create Whop $49 one-time product → hand over webhook secret + product ID
+- [ ] Sovereign: create Whop 999 EGP one-time product → hand over webhook secret + product ID
 - [ ] D1 schema + import (public vs pro column split)
 - [ ] Worker routes: checkout config, `/api/whop/webhook`, `/api/auth/verify`, `/api/me`
 - [ ] Middleware gate on `/dashboard` + pro fields; DELETE fake `src/lib/auth-context.tsx`

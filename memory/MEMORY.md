@@ -9,7 +9,7 @@
 - Local preview verified: `/` 200 (30 dossier links, no prompt bytes), `/company/atrium`
   200 (story + lock panel, no prompt bytes).
 - Pushed: `a86bca9` (split), `9688706` (untracked `.env`, `dev.db`).
-- Decisions locked with Sovereign: Cloudflare free tier, Whop-only payments, $49
+- Decisions locked with Sovereign: Cloudflare free tier, Whop-only payments, 999 EGP
   lifetime, no refunds, no passwords (magic-link + session cookie).
-- NEXT: Sovereign creates Whop $49 product → provides webhook secret + product ID →
+- NEXT: Sovereign creates Whop 999 EGP product → provides webhook secret + product ID →
   build D1 + Worker routes + session gate, delete fake auth.
