@@ -89,7 +89,7 @@ export default function PricingPage() {
           </div>
 
           <div className="pt-8">
-            <Link href="/register" className="block">
+            <Link href="/" className="block">
               <Button variant="outline" className="w-full h-11 text-xs font-semibold">
                 Start Reading Free Archive
               </Button>

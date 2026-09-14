@@ -73,8 +73,10 @@ describe("public company pages (story only, prompts paywalled)", () => {
     expect(src).toContain("generateStaticParams");
   });
 
-  it("routes visitors to pricing/dashboard instead", () => {
+  it("routes visitors to pricing — never to the vault", () => {
     expect(src).toContain('href="/pricing"');
-    expect(src).toContain('href="/dashboard"');
+    expect(src).not.toContain('href="/dashboard"');
+    expect(src).not.toContain('href="/login"');
+    expect(src).not.toContain('href="/register"');
   });
 });

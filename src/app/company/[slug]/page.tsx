@@ -106,9 +106,6 @@ export default async function CompanyPage({
           >
             Unlock the 5 rebuild blueprints ($49) →
           </Link>
-          <Link href="/dashboard" className="text-rebuild hover:underline font-semibold">
-            Member sign in →
-          </Link>
         </div>
       </header>
 
@@ -290,9 +287,6 @@ export default async function CompanyPage({
                   className="inline-flex items-center gap-1 px-5 py-2.5 rounded bg-rebuild text-white text-sm font-semibold hover:bg-rebuild/90 transition-colors"
                 >
                   Unlock All 5 Blueprints ($49) →
-                </Link>
-                <Link href="/dashboard" className="text-sm font-mono text-rebuild hover:underline font-semibold">
-                  Member sign in →
                 </Link>
               </div>
             </div>

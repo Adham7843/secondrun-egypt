@@ -28,7 +28,6 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npx prisma generate
       - run: npm run build
       # GitHub Pages serves via Jekyll by default, which hides `_next/` — disable it.
       - run: touch out/.nojekyll

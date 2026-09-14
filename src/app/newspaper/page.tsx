@@ -489,7 +489,7 @@ export default function NewspaperPage() {
               <Link href="/pricing" className="hover:text-[#991B1B]">Pricing</Link>
               <Link href="/terms" className="hover:text-[#991B1B]">No-Refund Terms</Link>
               <Link href="/privacy" className="hover:text-[#991B1B]">Privacy Notice</Link>
-              <Link href="/dashboard" className="hover:text-[#991B1B]">Subscriber Command</Link>
+              <Link href="/pricing" className="hover:text-[#991B1B]">Get All-Access</Link>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-ink-500">

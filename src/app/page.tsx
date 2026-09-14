@@ -337,9 +337,9 @@ export default async function Home() {
         </div>
 
         <div className="flex items-center justify-between text-xs font-mono text-ink-400 pt-2 flex-wrap gap-2">
-          <span>✔ Direct routing to Private Console (/dashboard) · Daily Rotation Protocol Active</span>
-          <Link href="/dashboard" className="text-rebuild hover:underline font-semibold">
-            Preview Subscriber Desk →
+          <span>✔ Instant delivery after checkout · New rebuild featured daily</span>
+          <Link href="/pricing" className="text-rebuild hover:underline font-semibold">
+            Get the Pass ($49) →
           </Link>
         </div>
       </section>
@@ -373,14 +373,6 @@ export default async function Home() {
               className="w-full sm:w-auto h-11 px-6 text-sm font-semibold shadow-2xs bg-rebuild hover:bg-rebuild/90 text-white"
             >
               Unlock All 1,200+ Dossiers ($49) →
-            </Button>
-          </Link>
-          <Link href="/dashboard">
-            <Button
-              variant="outline"
-              className="w-full sm:w-auto h-11 px-6 text-sm font-medium bg-white hover:bg-ink-100 border-ink-300"
-            >
-              Open Member Dashboard →
             </Button>
           </Link>
         </div>

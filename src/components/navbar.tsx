@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useAuth } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ShieldAlert, Terminal, Search, Menu, X, Skull } from "lucide-react";
+import { Search, Menu, X, Skull } from "lucide-react";
 
+// FRONTEND navbar: no accounts, no sessions, no vault links.
+// Every CTA routes to pricing (Whop checkout). Members re-enter via email link.
 export default function Navbar() {
-  const { user, logout } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -41,46 +40,22 @@ export default function Navbar() {
           <Link href="/" className="hover:text-ink transition-colors">
             Public Archive
           </Link>
-          <Link href="/dashboard" className="hover:text-rebuild font-semibold transition-colors flex items-center gap-1.5">
-            <Terminal className="w-3.5 h-3.5 text-rebuild" />
-            Subscriber Desk
-            <span className="text-[9px] font-mono uppercase bg-rebuild text-white px-1.5 py-0.2 rounded">PRO</span>
+          <Link href="/browse" className="hover:text-ink transition-colors flex items-center gap-1.5">
+            <Search className="w-3.5 h-3.5 text-ink-500" />
+            Browse
           </Link>
           <Link href="/pricing" className="hover:text-ink transition-colors">
             Pricing
           </Link>
         </nav>
 
-        {/* CTA & Actions */}
+        {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
-          {user && user.isPaid ? (
-            <>
-              <Link href="/dashboard">
-                <Button variant="outline" size="sm" className="text-xs font-mono border-rebuild text-rebuild font-semibold">
-                  Console ({user.name.split(" ")[0]}) →
-                </Button>
-              </Link>
-              <button
-                onClick={logout}
-                className="text-xs font-mono text-ink-500 hover:text-ink underline"
-              >
-                Sign Out
-              </button>
-            </>
-          ) : (
-            <>
-              <Link href="/login">
-                <Button variant="outline" size="sm" className="text-xs font-mono bg-white">
-                  Sign In
-                </Button>
-              </Link>
-              <Link href="/pricing">
-                <Button variant="primary" size="sm" className="text-xs font-semibold bg-rebuild hover:bg-rebuild/90 text-white">
-                  All-Access Pass ($49)
-                </Button>
-              </Link>
-            </>
-          )}
+          <Link href="/pricing">
+            <Button variant="primary" size="sm" className="text-xs font-semibold bg-rebuild hover:bg-rebuild/90 text-white">
+              All-Access Pass ($49)
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -104,53 +79,30 @@ export default function Navbar() {
             Public Archive
           </Link>
           <Link
-            href="/dashboard"
+            href="/browse"
             onClick={() => setMobileOpen(false)}
-            className="block py-2 text-base font-medium text-ink hover:text-rebuild flex items-center justify-between"
+            className="block py-2 text-base font-medium text-ink hover:text-rebuild"
           >
-            <span>Subscriber Desk</span>
-            <span className="text-[9px] font-mono uppercase bg-rebuild text-white px-1.5 py-0.5 rounded font-bold">PRO</span>
+            Browse
           </Link>
           <Link
             href="/pricing"
             onClick={() => setMobileOpen(false)}
             className="block py-2 text-base font-medium text-ink hover:text-rebuild"
           >
-            All-Access Pass ($49)
+            Pricing
           </Link>
           <div className="pt-3 border-t border-ink-200 flex flex-col gap-2 font-mono">
-            {user && user.isPaid ? (
-              <>
-                <Link href="/dashboard" onClick={() => setMobileOpen(false)}>
-                  <Button variant="primary" className="w-full text-xs font-semibold bg-rebuild text-white">
-                    Command Console ({user.name}) →
-                  </Button>
-                </Link>
-                <button
-                  onClick={() => {
-                    logout();
-                    setMobileOpen(false);
-                  }}
-                  className="py-2 text-center text-xs text-ink-500 hover:text-ink underline"
-                >
-                  Sign Out
-                </button>
-              </>
-            ) : (
-              <>
-                <Link href="/login" onClick={() => setMobileOpen(false)}>
-                  <Button variant="outline" className="w-full text-xs bg-white">
-                    Sign In
-                  </Button>
-                </Link>
-                <Link href="/pricing" onClick={() => setMobileOpen(false)}>
-                  <Button variant="primary" className="w-full text-xs bg-rebuild text-white">
-                    All-Access Pass ($49)
-                  </Button>
-                </Link>
-              </>
-            )}
+            <Link href="/pricing" onClick={() => setMobileOpen(false)}>
+              <Button variant="primary" className="w-full text-xs bg-rebuild text-white">
+                All-Access Pass ($49)
+              </Button>
+            </Link>
           </div>
+          <p className="flex items-center gap-1.5 text-[11px] font-mono text-ink-500 pt-1">
+            <Skull className="w-3.5 h-3.5" />
+            Already a member? Your access link is in your purchase email.
+          </p>
         </div>
       )}
     </header>
