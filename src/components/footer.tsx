@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Brandmark from "@/components/brandmark";
 import { Lock, ShieldCheck, FileText } from "lucide-react";
 
 export default function Footer() {

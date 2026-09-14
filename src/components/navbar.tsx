@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Brandmark from "@/components/brandmark";
 import { Search, Menu, X, Skull } from "lucide-react";
 
 // FRONTEND navbar: no accounts, no sessions, no vault links.
@@ -23,7 +22,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <Brandmark size="md" className="group-hover:bg-rebuild transition-colors" />
+          <div className="h-8 w-8 rounded-sm bg-ink text-white flex items-center justify-center font-display font-bold text-lg group-hover:bg-rebuild transition-colors">
+            II
+          </div>
           <div className="flex flex-col">
             <span className="font-display font-bold text-xl leading-none tracking-tight text-ink">
               SecondRun
