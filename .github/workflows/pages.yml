@@ -20,7 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_BASE_PATH: /secondrun-egypt
-      NEXT_PUBLIC_WHOP_PLAN_ID: plan_M5MLFzQq5CAEw
+      # Egypt Whop plan ID goes here when the 999 EGP product exists.
+      NEXT_PUBLIC_WHOP_PLAN_ID: ""
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
